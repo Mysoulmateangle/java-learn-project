@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<phones> 
+  <phone id="1"> 
+    <brand>华为</brand>  
+    <type>p8</type>  
+    <price>2000</price>  
+    <Storage>10G</Storage>  
+    <tepe>dada</tepe>
+  </phone>  
+  <phone id="2"> 
+    <brand>苹果</brand>  
+    <type>Iphonex</type>  
+    <price>4500元</price> 
+  </phone> 
+</phones>

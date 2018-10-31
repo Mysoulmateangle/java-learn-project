@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<phones> 
+  <phone id="1"> 
+    <brand>小米</brand>  
+    <price>2000</price>  
+    <Storage>10G</Storage> 
+  </phone>  
+  <phone id="2"> 
+    <brand>苹果</brand>  
+    <type>Iphonex</type>  
+    <price>4500元</price>  
+    <22>22</22>
+  </phone> 
+</phones>
