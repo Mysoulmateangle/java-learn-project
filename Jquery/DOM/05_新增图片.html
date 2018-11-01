@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var newImage = $("<img src='kobi.jpg'/>");
+					/*在body内部往后追加*/
+					//$("body").append(newImage);
+					//newImage.appendTo("body");
+					/*在body内部往前追加*/
+					//$("body").prepend(newImage);
+					//newImage.prependTo("body");
+					/*在body外部往前追加*/
+					//$("body").before(newImage);
+					newImage.insertBefore("body");
+				})
+				
+			})
+		</script>
+	</head>
+	<body>	
+		<img src="kobi.jpg"/>
+		<input type="button" id="btn" value="新增" />
+	</body>
+</html>

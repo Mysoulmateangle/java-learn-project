@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#chkAll").click(function(){
+					if($(this).is(":checked")){
+						$("input[type='checkbox']").attr("checked","checked");
+					}else{
+						//$("input[type='checkbox']").removeAttr("checked");
+						//$("input[type='checkbox']").attr("checked",null);
+						$("input[type='checkbox']").attr("checked",false);
+					}	
+				})
+				
+		
+			
+				$("#btnDel").click(function(){
+					$(":checkbox").each(function(){
+						if($(this).is(":checked")){
+							var value = $(this).val();
+							$("tr[id='"+value+"']").remove();
+					   }
+					})
+				})
+			})
+		</script>
+	</head>
+	<body>	
+		<table border="1">
+	        <tr>
+	           <th>选项</th>
+	           <th>编号</th>
+	           <th>姓名</th>
+	           <th>性别</th>
+	        </tr>
+	        <tr id="1">
+	           <td><input type="checkbox" value="1"/></td>
+	           <td>1001</td>
+	           <td>小明</td>
+	           <td>男</td>
+	        </tr>
+	        <tr id="2">
+	           <td><input type="checkbox" value="2"/></td>
+	           <td>1002</td>
+	           <td>明明</td>
+	           <td>女</td>
+	        </tr>
+	        <tr id="3">
+	           <td><input type="checkbox" value="3"/></td>
+	           <td>1003</td>
+	           <td>小红</td>
+	           <td>女</td>
+	        </tr>
+	        <tr>
+	           <td colspan="4">
+	           	<span><input id="chkAll" type="checkbox" />全选</span>
+               	<span><input id="btnDel" type="button" value="删除"/></span>
+	           </td>
+	        </tr>
+</table>
+
+	</body>
+</html>

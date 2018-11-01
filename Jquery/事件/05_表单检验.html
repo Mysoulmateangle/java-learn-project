@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择</title>
+		<script type="text/javascript" src="../js/jquery-1.8.2.js">
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				var array = [false];
+				$("#username").blur(function(){
+					var value = $(this).val();
+					if($.trim(value)==""){
+						$("#span").html("用户名不能为空!");
+					}else{
+						$("#span").html("ok!");
+						array[0] = true;
+					}
+				})
+				
+				$("#form").submit(function(){
+					for(var i=0;i<array.length;i++){
+						if(array[i]==false){
+							return false;
+						}
+					}
+					return true;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<form action="ok.jsp" id="form">
+			username:<input type="text" id="username"/><span id="span"></span><br/>
+			password:<input type="password" id="password"/><span id="span"></span><br/>
+			repassword:<input type="password" id="repassword"/><span id="span"></span><br/>
+			<input type="submit" value="注册"/>
+		</form>
+	</body>
+</html>
