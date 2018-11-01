@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					if($("img").attr("src").endsWith("left.png")){
+						$("img").attr("src","../img/right.png");
+					}else{
+						$("img").attr("src","../img/left.png");
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>	
+		<img src="../img/left.png" />
+		<input type="button" id="btn" value="切换" />
+	</body>
+</html>

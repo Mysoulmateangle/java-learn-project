@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.big{
+				width: 500px;
+				height: 500px;
+			}
+			.blod{
+				font-weight: bold;
+			}
+		</style>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				/*$("img").click(function(){
+					$(this).css("width","500px");
+					$(this).css("height","500px");
+				})
+				
+				$("#info").click(function(){
+					$(this).css("font-weight","bold");
+				})*/
+				
+				//如果图片有big类样式，那么就移除，否则，就添加
+				/*$("img").click(function(){
+					if($("img[class='big']").length=="1"){
+						$(this).removeClass("big");
+					}else{
+						$(this).addClass("big");
+					}
+					
+				})
+				
+				$("#info").click(function(){
+					if($("#info[class='blod']").length=="1"){
+						$(this).removeClass("blod");
+					}else{
+						$(this).addClass("blod");
+					}
+				})*/
+				/*$("img").click(function(){
+					if($(this).hasClass("big")){
+						$(this).removeClass("big");
+					}else{
+						$(this).addClass("big");
+					}
+					
+				})
+				$("#info").click(function(){
+					if($(this).hasClass("blod")){
+						$(this).removeClass("blod");
+					}else{
+						$(this).addClass("blod");
+					}
+					
+				})*/
+				
+				$("img").click(function(){
+					$(this).toggleClass("big");
+					
+				})
+				
+			})
+		</script>
+	</head>
+	<body>	
+		<img src="kobi.jpg"/>
+		<div id="info">
+			科比-布莱恩特24
+		</div>
+	</body>
+</html>

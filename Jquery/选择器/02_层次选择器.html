@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				display: none;
+			}
+			
+			#parent{
+				display:block;
+			}
+		</style>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//$("#div1").css("display","block");
+				/*后代选择器:所有的后代，不需要直属关系*/
+				//$("#parent div").css("display","block");
+				/*子代选择器:所有的子代，需要直属关系*/
+				//$("#parent>div").css("display","block");
+				/*相邻兄弟,相邻的隔壁兄弟*/
+				//$("#div2+div").css("display","block");
+				/*相邻后面的所有兄弟*/
+				//$("#div1~div").css("display","block");
+				/*相邻的前后所有兄弟*/
+				$("#div2").siblings().css("display","block");
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="div5">
+				div5
+			</div>
+			<div id="div1">
+				div1
+				<div id="div1_child">
+					div1_child
+				</div>
+			</div>
+			<div id="div2">
+				div2
+			</div>
+			<div id="div3">
+				div3
+			</div>
+			<div id="div4">
+				div4
+			</div>
+		</div>
+	</body>
+</html>

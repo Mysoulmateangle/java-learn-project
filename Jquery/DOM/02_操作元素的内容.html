@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				/*alert($("#info").text());
+				alert($("#info").html());*/
+				
+				/*直接输出内容*/
+				$("#info").text("<font style='color:red'>info</font>");
+				/*对输出的内容进行解析*/
+				$("#info2").html("<font style='color:red'>info</font>");
+			})
+		</script>
+	</head>
+	<body>	
+		<div id="info">text</div>
+		<div id="info2">text</div>
+	</body>
+</html>

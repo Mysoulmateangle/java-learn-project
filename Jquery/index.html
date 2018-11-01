@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//window.onload = function(){}
+			/*$(document).ready(function(){
+				alert("hello,jquery!!");
+			})*/
+			/*window.onload = function(){
+				alert("一起学习jQuery!!");
+			}
+			
+			window.onload = function(){
+				alert("一起学习jQuery,嘿嘿!!");
+			}*/
+			
+			/*$(document).ready(function(){
+				alert("一起学习jQuery!!");
+			})
+			$(document).ready(function(){
+				alert("一起学习jQuery,嘿嘿!!");
+			})*/
+			
+			$(function(){
+				alert("一起学习jQuery,嘿嘿!!");
+			})
+			//执行顺序:window.onload = function(){},如果有多个，会覆盖.$(document).ready(function(){}不会覆盖
+			//触发方式:页面加载完毕时触发，图片资源等加载完毕后。
+			//$(document).ready(function(){}：页面Dom结构加载完毕，不需要等待图片等资源
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

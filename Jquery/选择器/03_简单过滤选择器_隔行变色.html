@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				display: none;
+			}
+			
+			#parent{
+				display:block;
+			}
+		</style>
+		<script src="../js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("tr:even:not(:first)").css("color","red");
+				$("tr:odd").css("color","green");
+			})
+		</script>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+			<tr>
+				<td>1001</td>
+				<td>zs</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>1002</td>
+				<td>ls</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>1003</td>
+				<td>ww</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>1004</td>
+				<td>zl</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>1005</td>
+				<td>tq</td>
+				<td>19</td>
+			</tr>
+		</table>
+	</body>
+</html>
