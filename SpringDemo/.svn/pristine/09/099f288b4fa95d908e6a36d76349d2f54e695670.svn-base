@@ -1,0 +1,42 @@
+package com.qfedu.demo.spring.dao.impl;
+
+import javax.annotation.Resource;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
+
+import com.qfedu.demo.spring.dao.StudentDao;
+import com.qfedu.demo.spring.po.Student;
+
+@Repository
+public class StudentDaoImpl implements StudentDao {
+	private static Logger LOG = LogManager.getLogger(StudentDaoImpl.class);
+
+	@Resource
+	private SessionFactory sessionFactory;
+	
+	@Override
+	public void create(Student s) {
+		sessionFactory.getCurrentSession().persist(s);
+	}
+
+	@Override
+	public void update(Student s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Student findById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(String id) {
+		// TODO Auto-generated method stub
+		
+	}
+}

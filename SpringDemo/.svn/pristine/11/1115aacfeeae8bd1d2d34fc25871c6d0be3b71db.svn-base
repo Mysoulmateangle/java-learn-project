@@ -1,0 +1,37 @@
+package com.qfedu.demo.spring.ioc.test;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.qfedu.demo.spring.ioc.Person;
+import com.qfedu.demo.spring.ioc.Person2;
+
+public class AnnotationTest {
+	private static Logger LOG = LogManager.getLogger(AnnotationTest.class);
+	
+	@Test
+	public void test01() {
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Person p = context.getBean(Person.class);
+		LOG.info(p);
+		Person p2 = context.getBean("person1", Person.class);
+		LOG.info(p2);
+	}
+	
+	/**
+	 * scope=prototype
+	 */
+	@Test
+	public void test02() {
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		LOG.info("spring started...");
+		Person2 p = context.getBean(Person2.class);
+		LOG.info(p);
+		Person2 p2 = context.getBean("person2", Person2.class);
+		LOG.info(p2);
+		LOG.info("p == p2:" + (p == p2));
+	}
+}

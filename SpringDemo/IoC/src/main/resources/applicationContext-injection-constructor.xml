@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<!-- 定义bean:
+		Car car1 = new Car ();
+		car1.setName("红旗");
+		car1.setColor("褐色");
+		
+		Person person1 = new Person("李四", car1);
+	 -->
+	<bean id="car1" class="com.qfedu.demo.spring.ioc.Car">
+		<property name="name" value="红旗"></property>
+		<property name="color" value="褐色"></property>
+	</bean>
+	
+	<bean id="person1" class="com.qfedu.demo.spring.ioc.Person">
+		<constructor-arg name="name" index="0" value="李四"></constructor-arg>
+		<constructor-arg name="car" index="1" ref="car1"></constructor-arg>	
+	</bean>
+	
+	
+</beans>
+		

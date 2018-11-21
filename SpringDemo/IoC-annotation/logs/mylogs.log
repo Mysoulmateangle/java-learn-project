@@ -1,0 +1,24 @@
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanFactoryPostProcessor][main:0]-[INFO]postProcessBeanFactory...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:71]-[INFO]postProcessBeforeInitialization:userDaoImpl
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:71]-[INFO]postProcessAfterInitialization:userDaoImpl
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.Person][main:75]-[INFO]new Person...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:77]-[INFO]postProcessBeforeInitialization:person1
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:78]-[INFO]postProcessAfterInitialization:person1
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:86]-[INFO]postProcessBeforeInitialization:personConfig
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:86]-[INFO]postProcessAfterInitialization:personConfig
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:90]-[INFO]postProcessBeforeInitialization:org.springframework.context.event.internalEventListenerProcessor
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:90]-[INFO]postProcessAfterInitialization:org.springframework.context.event.internalEventListenerProcessor
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:92]-[INFO]postProcessBeforeInitialization:org.springframework.context.event.internalEventListenerFactory
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:93]-[INFO]postProcessAfterInitialization:org.springframework.context.event.internalEventListenerFactory
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.PersonConfig][main:110]-[INFO]createPerson...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.Person][main:111]-[INFO]new Person (name, age)...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:112]-[INFO]postProcessBeforeInitialization:createPerson
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:112]-[INFO]postProcessAfterInitialization:createPerson
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.Person3][main:121]-[INFO]new Person3...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:123]-[INFO]postProcessBeforeInitialization:person3
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:123]-[INFO]postProcessAfterInitialization:person3
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.Person2][main:124]-[INFO]new Person2 (name, age)...
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:126]-[INFO]postProcessBeforeInitialization:createPerson2
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.MyBeanPostProcessor][main:127]-[INFO]postProcessAfterInitialization:createPerson2
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.test.AnnotationTest][main:234]-[INFO]Person [name=李四, age=33, car=null]
+2018-11-2112:08:31[com.qfedu.demo.spring.ioc.test.AnnotationTest][main:235]-[INFO]Person [name=张三, age=30, car=null]
